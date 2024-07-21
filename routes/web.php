@@ -9,3 +9,6 @@ Route::get('/', function () {
 Route::get('/vsetky-blogy', function () {
     return view('blog.blogy');
 })->name('blog.index');
+Route::get('blog/vytvorit', function () {
+    return view('blog.create');
+})->name('blog.create');
